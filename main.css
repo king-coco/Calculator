@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;500;600;700;800;900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    font-family: 'League Spartan', sans-serif;
+    align-items: center;
+    background: hsl(222, 26%, 31%);
+    /* overflow: hidden; */
+}
+.body{
+    /* width: 35rem; */
+    /* height: 35rem; */
+    /* background: white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body .calc{
+    position: relative;
+}
+.body .calc .words{
+    display: flex;
+    gap: 20rem;
+    align-items: center;
+    justify-content: center;
+}
+.body .calc .words .text{
+    color: white;
+    font-size: 2rem;
+    font-weight: 800;
+}
+.body .calc .words .theme{
+    font-size: 0.6rem;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    color: white;
+    letter-spacing: 0.1rem;
+}
+.body .calc .words .theme .border{
+    /* position: absolute; */
+    width: 4rem;
+    height: 1.6rem;
+    cursor: pointer;
+    border-radius: 0.9rem;
+    background:  hsl(224, 36%, 15%);
+    /* margin-left: 5rem; */
+}
+.body .calc .words .theme .border::after{
+    content: '';
+    position: absolute;
+    width: 1rem;
+    cursor: pointer;
+    height: 1rem;
+    top: 2.6rem;
+    left: 29rem;
+    border-radius: 50%;
+    background: hsl(6, 63%, 50%);
+}
+.body .calc .content{
+    width: 31rem;
+    /* grid-column: 1 / -1; */
+    /* position: absolute; */
+    background: hsl(224, 36%, 15%);
+    color: white;
+    height: 8rem;
+    /* text-align: left; */
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.4rem;
+   justify-content: space-around;
+   padding: 10px;
+    align-items: flex-end;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.body .calc .content .smaller{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.body .calc .content .bigger{
+    font-size: 3rem;
+    font-weight: 720;
+}
+.body .calc .press{
+    width: 31rem;
+    /* position: absolute; */
+   height: 60vh;
+    margin-top: 2rem;
+    align-content: center;
+    align-items: center;
+    display: grid;
+    justify-content: center;
+   /* letter-spacing: 0.1rem; */
+    background: hsl(223, 31%, 20%);
+    border-radius: 0.5rem;
+    /* gap: rem; */
+    column-gap: 1.6rem;
+    row-gap: 0rem;
+    grid-template-columns: repeat(4, 90px);
+    /* grid-template-rows: minmax(120px, auto) repeat(5, 100px); */
+    grid-template-rows: repeat(5, 80px);
+}
+.body .calc .press button{
+    cursor: pointer;
+    border-radius: 0.4rem;
+    outline: none;
+    border: none;
+    font-family: 'League Spartan', sans-serif;
+    padding: 0.7rem 3rem;
+    text-align: center;
+    gap: 10rem;
+    background: hsl(30, 25%, 89%);
+    font-weight: 700;   
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    /* border: 1px solid white; */
+    outline: none;
+    transition: 0.5s ease;
+}
+.body .calc .press button:hover{
+    background: hsl(224, 36%, 15%);
+    color: white;
+}
+.body .calc .press .reset {
+    padding: 0.7rem 6.5rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    background: hsl(225, 21%, 49%);
+    color: white;
+    font-weight: 900;
+}
+.body .calc .press .equals{
+    padding: 0.7rem 6.5rem;
+    background: hsl(6, 63%, 50%);
+    color: white;
+    gap: 3;
+    margin-left: 7rem;
+}
+.body .calc .press .del{
+    /* padding: 0.7rem 6.5rem; */
+    background: hsl(225, 21%, 49%);
+    color: white;
+    gap: 3;
+    font-size: 1.7rem;
+    font-weight: 900;
+}
